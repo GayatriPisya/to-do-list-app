@@ -103,3 +103,72 @@ body {
     text-decoration: line-through;
     color: #6c757d;
 }
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center vertically */
+        margin: 0;
+        background-size: cover;
+        padding: 0; /* Remove margin and padding */
+    }
+
+    /* To-Do App Container - Adjust width and margins */
+    #todo-app {
+        width: 90%; /* Use 90% of the screen width */
+        margin: 0; /* Remove extra margin */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    /* Input and Button - Stack vertically */
+    #task-input {
+        flex-direction: column; /* Stack the input and button */
+        align-items: flex-start; /* Align the input to the left */
+        width: 300px;
+    }
+
+    #new-task {
+        margin-bottom: 10px; /* Add spacing below the input field */
+        width: 100%; /* Make the input field full width */
+        padding: 10px;
+    }
+
+    #add-task {
+        width: 100%; /* Make the add button full width */
+        margin-top: 10px;
+        align-items: center;
+        padding: 10px;
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    /* Tasks - Adjust size and spacing */
+    .task {
+        padding: 10px;
+        margin-bottom: 15px; /* Increase spacing between tasks */
+        flex-direction: column; /* Stack task name and actions vertically */
+        align-items: flex-start; /* Align task name to the left */
+    }
+
+    .task .actions {
+        margin-top: 10px; /* Add spacing above action buttons */
+        width: 100%; /* Full width for the actions */
+        display: flex;
+        justify-content: space-around; /* Space out the action buttons */
+    }
+
+    /* Smaller font for task name */
+    .task .task-name {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+    
+    /* Smaller font for buttons */
+    .task .actions button {
+        font-size: 18px;
+    }
+
+    /* Adjust heading size */
+    #todo-app h1 {
+        font-size: 24px; /* Reduce heading size */
+    }
+}
